@@ -1,0 +1,137 @@
+@orange: #c84f00;
+@margin-left: 40px;
+@white: #fafdfa;
+@width: 1000px;
+@red: #810000;
+@yellow: #94700c;
+@green: #258533;
+
+.ib-display {
+    display: inline-block;
+}
+
+body {
+    background-color: #3d3422;
+}
+
+.number-sign {
+    position: absolute;
+    background-color: @orange;
+    color: @white;
+    left: 20px;
+    top: 135px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.nav {
+    padding: 0;
+
+    ul, li {
+        .ib-display;
+        margin: 0;
+    }
+
+    li {
+        background-color: #544d3e;
+        height: 35px;
+        margin-right: 5px;
+    }
+
+    a {
+        padding: 10px 10px;
+        text-decoration: none;
+        color: @white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    }
+
+    .other-links {
+        margin-left: 595px;
+    }
+}
+
+.header {
+    background-color: @orange;
+    height: 40px;
+    width: @width;
+    margin-left: @margin-left;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 10px;
+
+    h2 {
+        .ib-display;
+        margin: 0;
+        color: @white;
+        font-weight: normal;
+        width: 500px;
+
+        span {
+            .ib-display;
+            width: 300px;
+            border-bottom: 1px @white solid;
+        }
+    }
+}
+
+.content {
+    .ib-display;
+    width: @width;
+    margin-left: @margin-left;
+    background-color: #f2e9d6;
+    margin-top: 20px;
+    height: 400px;
+
+    .description {
+        .ib-display;
+        width: 400px;
+        padding-left: 10px;
+    }
+
+    h1 {
+        .ib-display;
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    .browsers {
+        text-align: center;
+
+        div {
+            .ib-display;
+            width: 85px;
+        
+            div {
+                display: block;
+                height: 20px;
+                margin: 3px;
+                color: #ffffff;
+            }
+    
+            .red-shade {
+                background-color: @red;
+            }
+
+            .yellow-shade {
+                background-color: @yellow;
+            }
+            
+            .green-shade {
+                background-color: @green;
+            }
+            .brand {
+                height: 35px;
+                border-bottom: 5px solid black;
+                margin-right:3px;
+                color: black;
+                font-size: 15px;
+
+                .no-content {
+                    color: #f2e9d6;
+                }
+            }
+        }
+    }
+}
+
